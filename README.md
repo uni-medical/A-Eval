@@ -81,7 +81,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
   - [WORD](https://github.com/HiLab-git/WORD)
   - [TotalSegmentator](https://github.com/wasserth/TotalSegmentator)
   - [BTCV](https://www.synapse.org/#!Synapse:syn3193805/wiki/217752)
-- Thanks to the SOTA framework of: [nnUNet](https://github.com/MIC-DKFZ/nnUNet):
+- Thanks to the SOTA framework of: [nnUNet](https://github.com/MIC-DKFZ/nnUNet)
 
 ## 👋 Hiring & Global Collaboration
 - **Hiring:** We are hiring researchers, engineers, and interns in General Vision Group, Shanghai AI Lab. If you are interested in Medical Foundation Models and General Medical AI, including designing benchmark datasets, general models, evaluation systems, and efficient tools, please contact us.
