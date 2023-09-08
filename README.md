@@ -10,7 +10,7 @@
 - 🧠 In-depth analysis on model generalizability across different data usage scenarios and the role of model size.
 
 ## 📚 Datasets
-We train models on the official sets of [FLARE22](https://flare22.grand-challenge.org/), [AMOS](https://amos22.grand-challenge.org/), [WORD](https://github.com/HiLab-git/WORD), and [TotalSegmentator](https://github.com/wasserth/TotalSegmentator), and evaluate them using their validation sets as well as [BTCV](https://www.synapse.org/#!Synapse:syn3193805/wiki/217752)'s training set.
+We train models on the official sets of [FLARE22](https://flare22.grand-challenge.org/), [AMOS](https://amos22.grand-challenge.org/), [WORD](https://github.com/HiLab-git/WORD), and [TotalSegmentator](https://github.com/wasserth/TotalSegmentator), and evaluate them using their official <span style="color:red; font-size: larger;">**validation sets**</span> as well as [BTCV](https://www.synapse.org/#!Synapse:syn3193805/wiki/217752)'s official training set.
 
 > **Note**: While these datasets do have test sets, FLARE22, AMOS, and BTCV do not make their test labels publicly available. Therefore, for consistent evaluation, we use validation sets instead of test sets in A-Eval, regardless of label availability.
 
