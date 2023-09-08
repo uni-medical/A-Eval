@@ -2,7 +2,7 @@
 <a href="https://arxiv.org/abs/2309.03906"> <img src="https://img.shields.io/badge/eess.IV-2309.03906-b31b1b?logo=arxiv&logoColor=red"> </a>
 
 <div align="center">
-  <img src="assets/fig_overview.png" width="400">
+  <img src="assets/fig_overview.png" width="600">
 </div>
 
 ## 🌟 Highlights
@@ -10,15 +10,36 @@
 - 🧠 In-depth analysis on model generalizability across different data usage scenarios and the role of model size.
 
 ## 📚 Datasets
+We train models on the official sets of [FLARE22](https://flare22.grand-challenge.org/), [AMOS](https://amos22.grand-challenge.org/), [WORD](https://github.com/HiLab-git/WORD), and [TotalSegmentator](https://github.com/wasserth/TotalSegmentator), and evaluate them using their validation sets as well as [BTCV](https://www.synapse.org/#!Synapse:syn3193805/wiki/217752)'s training set.
+
+> **Note**: While these datasets do have test sets, FLARE22, AMOS, and BTCV do not make their test labels publicly available. Therefore, for consistent evaluation, we use validation sets instead of test sets in A-Eval, regardless of label availability.
 
 | **Dataset** | **Modality** | **# Train** | **# Test** | **# Organs** | **Region** |
-|-------------|--------------|-------------|------------|--------------|------------|
+|:-----------:|:------------:|:-----------:|:----------:|:------------:|:----------:|
 | FLARE22     | CT           | 50 labeled <br> 2000 unlabeled | 50 | 13 | North American <br> European |
 | AMOS        | CT & MR      | 200 CT <br> 40 MR | 100 CT <br> 20 MR | 15 | Asian |
 | WORD        | CT           | 100          | 20         | 16           | Asian     |
 | TotalSegmentator | CT       | 1082         | 57         | 104          | European  |
 | BTCV        | CT           | -            | 30         | 13           | North American |
 | A-Eval Totals | CT & MR    | 1432 labeled CT <br> 2000 unlabeled CT <br> 40 MR | 257 CT <br> 20 MR | 8  | North American <br> European <br> Asian |
+
+To ensure a meaningful and fair comparison across datasets, we evaluate the models’ performance based on a set of eight organ classes shared by all five datasets. We unify these labels using an overlapped label system. The corresponding code for label systems and label conversion can be found in the repository: [`label_systems.py`](Evaluation/label_systems.py) and [`convert_label_2_overlap_label.py`](Evaluation/convert_label_2_overlap_label.py).
+| Organ Class            | **FLARE22** | **AMOS** | **WORD** | **TotalSegmentator** | **BTCV** | **A-Eval** |
+|:-----------------------|:-----------:|:--------:|:--------:|:--------------------:|:--------:|:----------:|
+| Liver                  |      ✓      |    ✓     |    ✓     |          ✓           |    ✓     |     ✓      |
+| Kidney Right           |      ✓      |    ✓     |    ✓     |          ✓           |    ✓     |     ✓      |
+| Kidney Left            |      ✓      |    ✓     |    ✓     |          ✓           |    ✓     |     ✓      |
+| Spleen                 |      ✓      |    ✓     |    ✓     |          ✓           |    ✓     |     ✓      |
+| Pancreas               |      ✓      |    ✓     |    ✓     |          ✓           |    ✓     |     ✓      |
+| Aorta                  |      ✓      |    ✓     |    ✗     |          ✓           |    ✓     |     ✗      |
+| Inferior Vena Cava     |      ✓      |    ✓     |    ✗     |          ✓           |    ✓     |     ✗      |
+| Adrenal Gland Right    |      ✓      |    ✓     |    ✗     |          ✓           |    ✓     |     ✗      |
+| Adrenal Gland Left     |      ✓      |    ✓     |    ✗     |          ✓           |    ✓     |     ✗      |
+| Gallbladder            |      ✓      |    ✓     |    ✓     |          ✓           |    ✓     |     ✓      |
+| Esophagus              |      ✓      |    ✓     |    ✓     |          ✓           |    ✓     |     ✓      |
+| Stomach                |      ✓      |    ✓     |    ✓     |          ✓           |    ✓     |     ✓      |
+| Duodenum               |      ✓      |    ✓     |    ✓     |          ✓           |    ✗     |     ✗      |
+
 
 ## 🏆 Results
 ### DSC
