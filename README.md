@@ -2,7 +2,7 @@
 <a href="https://arxiv.org/abs/2309.03906"> <img src="https://img.shields.io/badge/eess.IV-2309.03906-b31b1b?logo=arxiv&logoColor=red"> </a>
 
 <div align="center">
-  <img src="assets/fig_overview.png" width="600">
+  <img src="assets/fig_overview.png" width="500">
 </div>
 
 ## 🌟 Highlights
