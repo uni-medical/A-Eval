@@ -38,6 +38,9 @@ To ensure a meaningful and fair comparison across datasets, we evaluate the mode
 
 *Note: The WORD dataset has been post-processed to distinguish between left and right adrenal glands.
 
+## Results
+![results](assets/box_plot_6subfigures.png)
+
 ## 🎫 License
 This project is released under the [Apache 2.0 license](LICENSE). 
 
