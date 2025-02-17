@@ -18,7 +18,7 @@ We provide pre-trained model that has been jointly trained on A-Eval. You can do
 | TotalSegmentator MR | MR   | 268         | 30         | 56          | 10                 | Europe     |
 | **A-Eval Totals** | **CT & MR** | **1432 labeled CT** <br> **2000 unlabeled CT** <br> **308 MR** | **239 CT** <br> **50 MR** | **10** | **10** | **North America** <br> **Europe** <br> **Asia** |
 
-To ensure a meaningful and fair comparison across datasets, we evaluate the models' performance based on a set of ten organ classes shared by all datasets. We unify these labels using an overlapped label system. The corresponding code for label systems and label conversion can be found in the repository: [`label_systems.py`](Evaluation/label_systems.py) and [`convert_label_2_overlap_label.py`](Evaluation/convert_label_2_overlap_label.py).
+To ensure a meaningful and fair comparison across datasets, we evaluate the models' performance based on a set of ten organ classes shared by all datasets. We unify these labels using an overlapped label system. The corresponding code for label systems and label conversion can be found in the repository: [`label_systems.py`](Evaluation/label_systems.py) and [`convert_label.py`](Evaluation/convert_label.py).
 
 | Organ Class            | **FLARE22** | **AMOS CT** | **WORD*** | **TotalSegmentator v2** | **AMOS MR** | **TotalSegmentator MR** | **A-Eval** |
 |:-----------------------|:-----------:|:-----------:|:---------:|:----------------------:|:-----------:|:----------------------:|:----------:|
