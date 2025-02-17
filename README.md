@@ -1,5 +1,10 @@
 # A-Eval 
 
+## Joint trained Models on A-Eval
+
+We provide pre-trained model that has been jointly trained on A-Eval. You can download it from our Google Drive repository:
+[Google Drive Download Link](https://drive.google.com/drive/folders/1_gUu6y6_QeP2gobsL_qFv9Z8uU4FunkV?usp=sharing)
+
 ## 📚 Datasets
 
 | **Dataset** | **Modality** | **# Train** | **# Test** | **# Organs** | **# Organs (Test)** | **Region** |
