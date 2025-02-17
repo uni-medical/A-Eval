@@ -1,6 +1,6 @@
 # A-Eval 
-
-## Joint trained Models on A-Eval
+![overview](assets/figure1_overview.png)
+## 🤖 Trained Model
 
 We provide pre-trained model that has been jointly trained on A-Eval. You can download it from our Google Drive repository:
 [Google Drive Download Link](https://drive.google.com/drive/folders/1_gUu6y6_QeP2gobsL_qFv9Z8uU4FunkV?usp=sharing)
